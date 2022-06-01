@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="./index.css" />
-<html>
+<br>
   <head>
     <title>Back End Assessment</title>
   </head>
   <h1>not a scam.</h1>
-  <body class="container">
+  <br class="container">
     <button id="complimentButton">Get a compliment</button>
     <button id="fortuneButton">Get a fortune</button>
-    <br>
+    <br><br><br>
+    const 
       <p>What street did you grow up in?</p>
-      <input placeholder="childhood street" />
-      <button id="What street did you grow up in?">submit</button></br>
-
+      <input id = "answerStreet" placeholder="childhood street" />
+      <button id="edit">Edit</button>
+      <button id="What street did you grow up in?">Submit</button></br>
+      
       <p>What is the name of your favorite pet?</p>
-      <input placeholder="favorite pet" />
-      <button id="What is the name of your favorite pet?">submit</button></br>
+      <input id = "answerPet" placeholder="favorite pet" />
+      <button id="edit">Edit</button>
+      <button id="avorite pet">Submit</button></br>
 
       <p>What was your favorite food as a child?</p>
-      <input placeholder="favorite food" />
-      <button id="What was your favorite food as a child?">submit</button></br>
+      <input id = "answerFood" placeholder="favorite food" />
+      <button id="edit">Edit</button>
+      <button id="favorite food as a child?">Submit</button></br>
 
       <p>What is the name of your first school?</p>
-      <input placeholder="first school" />
-      <button id="What is the name of your first school?">submit</button></br>
+      <input id = "answerSchool" placeholder="first school" />
+      <button id="edit">Edit</button>
+      <button id="first school">Submit</button></br>
 
       <p>What was the make of your first car?</p>
-      <input placeholder="first car?" />
-      <button id="What was the make of your first car?">submit</button></br>
+      <input id = "answerCar" placeholder="first car?" />
+      <button id="edit">Edit</button>
+      <button id="first car">Submit</button></br></br></br>
 
 
+      
+      
     </br><label for="advice">Advice:</label>
-      <select id="droplist" name="dropList">
-        <option value="clickDrop">click here</option>
-        <option value="adviceDrop">Advice </option> 
-        <option value= "editDrop">Go back and edit</option> 
-        <option value= "deleteDrop">CLICK HERE to DELETE everything!</option>
-      </select>
+    <select id="droplist" name="dropList">
+      <option value="clickDrop">click here</option>
+      <option value="adviceDrop">Advice </option> 
+    </select>
+  </br></br> 
+    <button id="delete">Click here to delete ALL answers! </button>
+    
 
+    </body>
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>

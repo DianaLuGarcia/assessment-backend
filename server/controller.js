@@ -29,3 +29,22 @@ module.exports = {
     res.status(200).send(randomFortune);
   },
 };
+
+function theAnswers(input) {
+  let questionAnswer = document.getElementById(input).value;
+  return questionAnswer;
+}
+
+const handleDeleteButton = (id) => {
+  const deleteButton = document.createElement("button");
+  deleteButton.className = "delete-button";
+  deleteButton.addEventListener("click", () => {
+    axios
+      .delete(`http://localhost:4090/api/todos/${id}`)
+      .then(appendToDos)
+      .catch((err) => {
+        console.log(err);
+      });
+  });
+  return deleteButton;
+};
